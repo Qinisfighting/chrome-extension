@@ -23,7 +23,7 @@ if (localStorage.getItem("tasks")) {
 // submit form
 todoForm.addEventListener("submit", function (e) {
     e.preventDefault();
-    const input = document.getElementById("input");
+    let input = document.getElementById("input");
     let inputValue = document.getElementById("input").value;
     if (inputValue != "") {
         const task = {
@@ -34,7 +34,6 @@ todoForm.addEventListener("submit", function (e) {
         tasks.push(task);
         localStorage.setItem("tasks", JSON.stringify(tasks));
         createTask(task);
-        input.reset();
     }
     input.focus();
 });

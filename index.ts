@@ -28,7 +28,7 @@ if (localStorage.getItem("tasks")) {
 // submit form
 todoForm.addEventListener("submit", function (e: Event) {
   e.preventDefault();
-  const input: HTMLElement | any = document.getElementById(
+  let input: HTMLElement = document.getElementById(
     "input"
   ) as HTMLInputElement;
   let inputValue: string | number = (document.getElementById(
@@ -45,7 +45,6 @@ todoForm.addEventListener("submit", function (e: Event) {
     tasks.push(task);
     localStorage.setItem("tasks", JSON.stringify(tasks));
     createTask(task);
-    input.reset();
   }
   input.focus();
 });
