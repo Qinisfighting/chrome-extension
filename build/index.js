@@ -14,7 +14,7 @@ const todoList = document.querySelector(".todo-list");
 const totalTasks = document.querySelector(".total-tasks span");
 const completedTasks = document.querySelector(".completed-tasks span");
 const remainingTasks = document.querySelector(".remaining-tasks span");
-let tasks = JSON.parse(localStorage.getItem("tasks") || "{}");
+let tasks = JSON.parse(localStorage.getItem("tasks") || "[]");
 if (localStorage.getItem("tasks")) {
     tasks.map((task) => {
         createTask(task);

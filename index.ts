@@ -17,7 +17,7 @@ interface Task {
   isCompleted: boolean;
 }
 
-let tasks: Task[] = JSON.parse(localStorage.getItem("tasks") || "{}");
+let tasks: Task[] = JSON.parse(localStorage.getItem("tasks") || "[]");
 
 if (localStorage.getItem("tasks")) {
   tasks.map((task) => {
