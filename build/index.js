@@ -34,7 +34,7 @@ todoForm.addEventListener("submit", function (e) {
         tasks.push(task);
         localStorage.setItem("tasks", JSON.stringify(tasks));
         createTask(task);
-        inputValue = "";
+        input.reset();
     }
     input.focus();
 });
