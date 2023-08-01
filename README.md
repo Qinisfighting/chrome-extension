@@ -13,7 +13,7 @@ _______________
  $ npx tsc  
  ```           
  - Navigate to the chrome://extensions in your chrome browser. And make sure that Developer Mode is activated on the top right side of the screen.
- - Click Load Unpacked and target the build folder in the project folder.
+ - Click Load Unpacked and target the project folder.
 
 _______________
 ### Developer Mode
