@@ -209,7 +209,7 @@ async function getQuotes(): Promise<void> {
       a: string;
     } = data[randomIndex];
     const myQuote = document.getElementById("quote")!;
-    myQuote.innerHTML = `<h3>${quote.q}</h3><p> - ${quote.a}</p>`;
+    myQuote.innerHTML = `<h3>" ${quote.q} "</h3><p> - ${quote.a}</p>`;
   } catch (error) {
     console.log("Fetch coin error -", error);
   }
